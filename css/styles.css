@@ -23,6 +23,7 @@
 }
 
  .gallery {
+
      padding: 5%;
      display: grid;
      grid-template-columns: repeat(auto-fill, 250px);
@@ -41,17 +42,3 @@ a {
     width: 1200px;
     margin: auto;
  }
-
- 
-/* reference code? still has white space to right of photo
-but its less..   */
- 
-/* .gallery {
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 15px;
-    margin: 45px auto;
-    justify-content: center;
-  } */
