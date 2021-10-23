@@ -7,19 +7,19 @@
 
 // }
 
-const search = document.querySelector('#search');
-const boxTexts = document.querySelectorAll('.col p');
-const handleSearch = event => {
-    const searchTerm = event.target.value.toLowerCase();
-    boxTexts.forEach(boxText => {
-            const text = boxText.textContent.toLowerCase();
-            const box = boxText.parentElement;
+var search = document.getElementById('#search');
+var input = document.queryselectorAll('data-caption');
+var handleSearch = event => {
+    var searchTerm = event.target.value.toLowerCase();
+    input.forEach(input => {
+            var text = input.textContent.toLowerCase();
+            var image = input.a;
             if(text.includes(searchTerm)) {
-                box.style.display = "block";
+                image.style.display = "block";
             } else {
-                box.style.display = "none";
+                image.style.display = "none";
             }
     });
-}
+};
 search.addEventListener('keyup', handleSearch);
 
